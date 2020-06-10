@@ -13,7 +13,7 @@ public class Main {
 
     @Before // Инициализация ChromeDriver и WebDriverWait
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver","/Testing/WebDriver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/Testing/newnewtask/WebDriver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.ozon.ru");
         driver.manage().window().maximize();

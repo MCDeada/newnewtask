@@ -74,7 +74,7 @@ public class ThirdTest {
         driver.findElement(SORT_BY_BUTTON).sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ENTER);
         Thread.sleep(2000);
         driver.findElement(ADD_JUICER).click();
-        Thread.sleep(600);
+        Thread.sleep(700);
         // Переход в корзину
         driver.findElement(CHECK_BASKET).click();
         driverWait.until(ExpectedConditions.presenceOfElementLocated(IS_IN_BASKET));
