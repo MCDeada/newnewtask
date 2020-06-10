@@ -12,7 +12,7 @@ public class SecondTest {
     private final By CITY_NAME = By.xpath("//*[@id=\"__ozon\"]/div/div[1]/div[1]/div/button/span");
     private final By MAIN_PAGE = By.xpath("//*[@id=\"__ozon\"]/div/div[1]/div[4]/div/div[1]/div[3]/section[1]/ul/li[1]/a");
     private final By OPEN_MAP = By.xpath("//*[@id=\"__ozon\"]/div/div[1]/div[4]/div/div[2]/div[5]/div[2]/div/div[2]/div[1]/a/div/div");
-    private final By ADRESS = By.xpath("//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[3]/div/div[2]/div[2]/div/div[2]/div/span/span");
+    private final By ADDRESS = By.xpath("//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[3]/div/div[2]/div[2]/div/div[2]/div/span/span");
     // Функция второго теста
     public void secondTest(ChromeDriver driver, WebDriverWait driverWait) throws InterruptedException {
         // Находим место смены города
@@ -45,11 +45,11 @@ public class SecondTest {
 
         Thread.sleep(1000);
         // Получаем адрес доставки
-        String city_delivery = driverNew.findElement(ADRESS).getText();
+        String city_delivery = driverNew.findElement(ADDRESS).getText();
         // Закрываем открытое окно
         driverNew.quit();
         // Проверяем
         if (city.equals(city_delivery))
-            System.out.println("super ok");
+            System.out.println("Test 2 passed");
     }
 }

@@ -22,7 +22,7 @@ public class FourthTest {
     public void fourthTest(ChromeDriver driver, WebDriverWait driverWait) throws InterruptedException {
         // Находим все соковыжималки в ценовом диапазоне от 3000 др 4000
         ThirdTest tt = new ThirdTest();
-        tt.FindJuicersWithPrice(driver, driverWait);
+        tt.findJuicersWithPrice(driver, driverWait);
         // Добавляем критерий мощности
         driver.findElement(POWER_INPUT_MIN).sendKeys(Keys.CONTROL + "a", Keys.BACK_SPACE);
         driver.findElement(POWER_INPUT_MIN).sendKeys("1000");

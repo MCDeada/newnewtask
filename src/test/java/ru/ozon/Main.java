@@ -33,7 +33,7 @@ public class Main {
     }
 
     @Test // Поиск самой дешевой соковыжималки в ценовом диапазоне от 3000 до 4000, увеличения числа заказов до 5
-    public void ThirdTest() throws InterruptedException {
+    public void thirdTest() throws InterruptedException {
         ThirdTest tt = new ThirdTest();
         tt.thirdTest(driver, driverWait);
     }

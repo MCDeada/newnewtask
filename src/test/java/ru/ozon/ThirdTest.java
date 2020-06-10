@@ -31,7 +31,7 @@ public class ThirdTest {
     String text;
     String title;
     // Функционал с поиском соковыжималок от 3000 до 4000 вынесен в отдельную функцию, чтобы использовать в четвертом заданнии
-    public void FindJuicersWithPrice(ChromeDriver driver, WebDriverWait driverWait) throws InterruptedException{
+    public void findJuicersWithPrice(ChromeDriver driver, WebDriverWait driverWait) throws InterruptedException{
         driver.findElement(CATALOG).click();
         // Бытовая техника
         driverWait.until(ExpectedConditions.presenceOfElementLocated(KITCHEN));
@@ -64,7 +64,7 @@ public class ThirdTest {
     }
     // Функция с третьим тестом
     public void thirdTest(ChromeDriver driver, WebDriverWait driverWait) throws InterruptedException{
-        FindJuicersWithPrice(driver, driverWait);
+        findJuicersWithPrice(driver, driverWait);
 
         if (text.equals(intervalControlstring) && title.equals(titleControlstring))
             System.out.println("Интервал и категория товара заданы корректно");
